@@ -65,8 +65,8 @@ all: main-build
 main-build: P1_delayNB.elf secondary-outputs
 
 # Tool invocations
-P1_delayNB.elf: $(OBJS) $(USER_OBJS) C:\Users\Guillermo\Documents\GitHub\PdM_workspace\P1_delayNB\STM32F429ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "P1_delayNB.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Guillermo\Documents\GitHub\PdM_workspace\P1_delayNB\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="P1_delayNB.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+P1_delayNB.elf: $(OBJS) $(USER_OBJS) /home/gcasti/Documentos/Programacion_de_MCU/PdM_workspace/P1_delayNB/STM32F429ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "P1_delayNB.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/gcasti/Documentos/Programacion_de_MCU/PdM_workspace/P1_delayNB/STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="P1_delayNB.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

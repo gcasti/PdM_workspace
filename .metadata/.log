@@ -2467,3 +2467,71 @@ Command-line arguments:  -data /home/pato/Embebidos/CESE/PdM_workspace -os linux
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-10-19 13:41:17.093
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2021-11-14 16:28:36.505 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_AR
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-11-14 16:28:49.139
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-11-14 16:28:49.197
+!MESSAGE Log4j initialized with config file /home/gcasti/Documentos/Programacion_de_MCU/PdM_workspace/.metadata/.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-11-14 16:28:52.085
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2021-11-14 16:28:53.350
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.FileNotFoundException: /home/gcasti/Documentos/Programacion_de_MCU/PdM_workspace/Ejercicio_delayNB_1/Debug/Ejercicio_delayNB_1.map (No existe el archivo o el directorio)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/java.io.FileReader.<init>(FileReader.java:60)
+	at elf_analyzer.datamodel.BuildDataProviderMap.readFile(BuildDataProviderMap.java:55)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:349)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeMemConfig(BuildDataProviderMap.java:392)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:80)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$7(ElfAnalyzerView.java:492)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2021-11-14 16:28:54.364
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.FileNotFoundException: /home/gcasti/Documentos/Programacion_de_MCU/PdM_workspace/Ejercicio_delayNB_1/Debug/Ejercicio_delayNB_1.map (No existe el archivo o el directorio)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/java.io.FileReader.<init>(FileReader.java:60)
+	at elf_analyzer.datamodel.BuildDataProviderMap.readFile(BuildDataProviderMap.java:55)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:349)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeLinkerSymbols(BuildDataProviderMap.java:400)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:102)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$7(ElfAnalyzerView.java:492)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-11-14 16:30:00.252
+!MESSAGE Indexed 'P0_Ej1' (98 sources, 208 headers) in 5,07 sec: 29.555 declarations; 93.517 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0,12 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-11-14 16:30:24.674
+!MESSAGE Indexed 'P0_Ej2' (98 sources, 209 headers) in 4,71 sec: 29.555 declarations; 93.538 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0,12 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-11-14 16:30:42.949
+!MESSAGE Indexed 'P1_delayNB' (101 sources, 212 headers) in 4,69 sec: 29.609 declarations; 93.866 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0,12 %)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2021-11-14 16:30:45.252
+!MESSAGE Stackanalyzer failed to analyze input
+!STACK 0
+java.lang.Exception: File: /home/gcasti/Documentos/Programacion_de_MCU/PdM_workspace/Ejercicio_delayNB_1/Debug/Ejercicio_delayNB_1.elfdo not exists
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:56)
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:84)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:914)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$15(StackAnalyzerView.java:1256)
+	at java.base/java.lang.Thread.run(Thread.java:834)
