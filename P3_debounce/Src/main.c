@@ -53,7 +53,8 @@ int main(void)
        - Low Level Initialization
      */
   HAL_Init();
-
+  BSP_LED_Init(LED3);
+  BSP_LED_Off(LED3);
 
 
   /* Configure the system clock to 180 MHz */
@@ -145,7 +146,7 @@ static void SystemClock_Config(void)
 static void Error_Handler(void)
 {
   /* Turn LED2 on */
-  BSP_LED_On(LED2);
+  BSP_LED_On(LED3);
   while (1)
   {
   }

@@ -9,15 +9,17 @@
 #define API_INC_API_DEBOUNCE_H_
 
 
-#include <stdint.h>
-#include <stdbool.h>
-#include "stm32f4xx_nucleo_144.h" 	/* <- BSP include */
-#include "stm32f4xx_hal.h"
-#include "API_delay.h"
-
+// Tiempo en milisegundos para el antirebote
 #define DELAY_DEBOUNCE 40
 
+/*
+ * Inicializa el módulo antirebote
+ */
 void debounceInit();
+
+/*
+ * Actualiza la maáquina de estados del módulo antirebote
+ */
 void debounceUpdate();
 
 
