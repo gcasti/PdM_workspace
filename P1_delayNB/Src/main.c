@@ -45,7 +45,11 @@ static void Error_Handler(void);
   */
 int main(void)
 {
-  /* STM32F4xx HAL library initialization:
+  static delay_t timerLED1;
+  static delay_t timerLED2;
+  static delay_t timerLED3;
+
+	/* STM32F4xx HAL library initialization:
        - Configure the Flash prefetch
        - Systick timer is configured by default as source of time base, but user 
          can eventually implement his proper time base source (a general purpose 
@@ -63,9 +67,7 @@ int main(void)
   BSP_LED_Init(LED1);
   BSP_LED_Init(LED2);
   BSP_LED_Init(LED3);
-  static delay_t timerLED1;
-  static delay_t timerLED2;
-  static delay_t timerLED3;
+
 
   BSP_LED_On(LED1);
   BSP_LED_On(LED2);

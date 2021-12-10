@@ -6,13 +6,12 @@
  */
 
 #include "API_delay.h"
-
+#include "stm32f4xx_hal.h"
 
 void delayInit( delay_t *delay, tick_t duration )
 {
 	delay->duration = duration;
 	delay->running = false;
-
 }
 
 bool_t delayRead( delay_t *delay )
